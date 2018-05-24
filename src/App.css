@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Submit-form {
+  width: 50%;
+  margin: auto;
+}
+
+.New-to-do-item {
+  text-align: center;
+  font-size: large;
+  padding: 6px;
+  border: solid black;
+  border-width: 1.5px;
+  margin: 20px 10px 20px 0px;
+}
+
+::placeholder {
+  color: rgb(180, 180, 180);
+  opacity: 1;
+}
+
+.Submit-button {
+  font-size: medium;
+  margin: 5px 0px 5px 3px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 2px solid black;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.Submit-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.To-do-list {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.To-do-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 18px;
+  text-align: left;
+  background-color: none;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.To-do-list-item:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.To-do-check-box {
+  margin-right: 10px;
+}
+
+.To-do-item-name {
+  flex-grow: 8;
+}
+
+.Delete-to-do-item-button {
+  align-self: center;
+  border: 1.3px solid rgb(59, 55, 55);
+  border-radius: 8px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.Delete-to-do-item-button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
