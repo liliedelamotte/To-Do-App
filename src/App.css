@@ -22,6 +22,63 @@
   font-size: large;
 }
 
+.To-do-list-headers {
+  display: flex;
+  flex-direction: row;
+}
+
+.Grocery-list-header {
+  flex: 1;
+}
+
+.Today-to-dos-header {
+  flex: 1;
+}
+.Long-term-to-dos-header {
+  flex: 1;
+}
+
+.To-do-list-submit-forms {
+  display: flex;
+  flex-direction: row;
+}
+
+.Grocery-list-form {
+  flex: 1;
+}
+
+.New-grocery-list-item {
+  font-size: large;
+  padding: 6px;
+  border: solid black;
+  border-width: 1.5px;
+  margin: 20px 10px 20px 0px;
+}
+
+.Today-to-dos-form {
+  flex: 1;
+}
+
+.New-today-to-dos-item {
+  font-size: large;
+  padding: 6px;
+  border: solid black;
+  border-width: 1.5px;
+  margin: 20px 10px 20px 0px;
+}
+
+.Long-term-to-dos-form {
+  flex: 1;
+}
+
+.New-long-term-to-dos-item {
+  font-size: large;
+  padding: 6px;
+  border: solid black;
+  border-width: 1.5px;
+  margin: 20px 10px 20px 0px;
+}
+
 .Submit-form {
   width: 50%;
   margin: auto;
@@ -36,7 +93,7 @@
   margin: 20px 10px 20px 0px;
 }
 
-::placeholder {
+New-to-do-item:placeholder {
   color: rgb(180, 180, 180);
   opacity: 1;
 }
@@ -56,19 +113,48 @@
   color: white;
 }
 
-.To-do-list {
-  width: 30%;
-  margin: auto;
+.To-do-lists {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  list-style-type: none;
   font-size: 18px;
 }
 
-.To-do-list-item {
+.Grocery-list {
+  list-style: none;
+}
+
+.Grocery-list-item {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
+  list-style-type: none;
+  font-size: 18px;
+  text-align: left;
+  background-color: none;
+  border-radius: 8px;
+  padding-right: 3px;
+}
+
+.Grocery-list-item:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.Grocery-item-name {
+  flex-grow: 8;
+}
+
+.Today-to-do-list {
+  list-style: none;
+}
+
+.Today-to-do-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
   list-style-type: none;
   font-size: 18px;
   text-align: left;
@@ -77,19 +163,44 @@
   padding: 3px;
 }
 
-.To-do-list-item:hover {
+.Today-to-do-list-item:hover {
   background-color: rgb(207, 207, 207);
+}
+
+.Today-to-do-item-name {
+  flex-grow: 8;
+}
+
+.Long-term-list{
+  list-style: none;
+}
+
+.Long-term-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  list-style-type: none;
+  font-size: 18px;
+  text-align: left;
+  background-color: none;
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.Long-term-list-item:hover {
+  background-color: rgb(207, 207, 207);
+}
+
+.Long-term-item-name {
+  flex-grow: 8;
 }
 
 .To-do-check-box {
   margin-right: 10px;
 }
 
-.To-do-item-name {
-  flex-grow: 8;
-}
-
 .Delete-to-do-item-button {
+  margin-left: 20px;
   align-self: center;
   border: 1.3px solid rgb(59, 55, 55);
   border-radius: 8px;
@@ -100,7 +211,6 @@
   background-color: black;
   color: white;
 }
-
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
