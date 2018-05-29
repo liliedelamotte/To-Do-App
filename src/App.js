@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo2 from './logo2.svg';
 import './App.css';
 
 class App extends Component {
@@ -166,14 +166,13 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">To-Do List</h1>
+          <img src={logo2} className="App-logo" alt="logo" />
         </header>
 
         <div className="To-do-list-headers">
-          <h1 className="Grocery-list-header">Grocery List</h1>
-          <h1 className="Today-to-dos-header">Today</h1>
-          <h1 className="Long-term-to-dos-header">Long Term</h1>
+          <h1 className="Grocery-list-header">grocery list</h1>
+          <h1 className="Today-to-dos-header">today</h1>
+          <h1 className="Long-term-to-dos-header">long term</h1>
         </div>
 
         <div className="To-do-list-submit-forms">
@@ -181,39 +180,39 @@ class App extends Component {
             <input
               className="New-grocery-list-item"
               type="text"
-              placeholder="New Item"
+              placeholder="new item"
               value={this.state.groceryListValue}
               onChange={this.handleGroceryListChange}/>
             <input
               className="Submit-button"
               type="submit"
-              value="Add"
+              value="add"
               onClick={this.handleGroceryListSubmit}/>
           </form>
           <form className="Today-to-dos-form" onSubmit={this.handleTodayToDoSubmit}>
             <input
               className="New-today-to-dos-item"
               type="text"
-              placeholder="New Item"
+              placeholder="new item"
               value={this.state.todayToDoValue}
               onChange={this.handleTodayToDoChange}/>
             <input
               className="Submit-button"
               type="submit"
-              value="Add"
+              value="add"
               onClick={this.handleTodayToDoSubmit}/>
           </form>
           <form className="Long-term-to-dos-form" onSubmit={this.handleLongTermSubmit}>
             <input
               className="New-long-term-to-dos-item"
               type="text"
-              placeholder="New Item"
+              placeholder="new item"
               value={this.state.longTermValue}
               onChange={this.handleLongTermChange}/>
             <input
               className="Submit-button"
               type="submit"
-              value="Add"
+              value="add"
               onClick={this.handleLongTermSubmit}/>
           </form>
         </div>

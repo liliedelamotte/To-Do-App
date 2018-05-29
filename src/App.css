@@ -3,13 +3,14 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 10s linear;
   height: 80px;
+  padding: 20px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background-color: rgb(7, 75, 80);
+  height: 130px;
   padding: 20px;
   color: white;
 }
@@ -50,7 +51,7 @@
 .New-grocery-list-item {
   font-size: large;
   padding: 6px;
-  border: solid black;
+  border: solid  rgb(7, 75, 80);
   border-width: 1.5px;
   margin: 20px 10px 20px 0px;
 }
@@ -62,7 +63,7 @@
 .New-today-to-dos-item {
   font-size: large;
   padding: 6px;
-  border: solid black;
+  border: solid rgb(7, 75, 80);
   border-width: 1.5px;
   margin: 20px 10px 20px 0px;
 }
@@ -74,7 +75,7 @@
 .New-long-term-to-dos-item {
   font-size: large;
   padding: 6px;
-  border: solid black;
+  border: solid rgb(7, 75, 80);
   border-width: 1.5px;
   margin: 20px 10px 20px 0px;
 }
@@ -88,7 +89,7 @@
   text-align: center;
   font-size: large;
   padding: 6px;
-  border: solid black;
+  border: solid rgb(7, 75, 80);
   border-width: 1.5px;
   margin: 20px 10px 20px 0px;
 }
@@ -103,40 +104,43 @@ New-to-do-item:placeholder {
   margin: 5px 0px 5px 3px;
   padding: 8px 10px;
   border-radius: 8px;
-  border: 2px solid black;
+  border: 2px solid  rgb(7, 75, 80);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
 .Submit-button:hover {
-  background-color: black;
+  background-color: rgb(7, 75, 80);
   color: white;
 }
 
 .To-do-lists {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 4.5px;
+  justify-content: center;
   margin: auto;
   list-style-type: none;
   font-size: 18px;
 }
 
 .Grocery-list {
+  border: solid rgb(7, 75, 80);
+  border-radius: 5px;
   list-style: none;
+  padding: 3px;
 }
 
 .Grocery-list-item {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   list-style-type: none;
   font-size: 18px;
   text-align: left;
   background-color: none;
   border-radius: 8px;
-  padding-right: 3px;
+  padding: 3px;
 }
 
 .Grocery-list-item:hover {
@@ -148,13 +152,16 @@ New-to-do-item:placeholder {
 }
 
 .Today-to-do-list {
+  border: solid rgb(7, 75, 80);
+  border-radius: 5px;
   list-style: none;
+  padding: 3px;
 }
 
 .Today-to-do-list-item {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  justify-content: center;
   list-style-type: none;
   font-size: 18px;
   text-align: left;
@@ -172,7 +179,10 @@ New-to-do-item:placeholder {
 }
 
 .Long-term-list{
+  border: solid rgb(7, 75, 80);
+  border-radius: 5px;
   list-style: none;
+  padding: 3px;
 }
 
 .Long-term-list-item {
@@ -202,13 +212,13 @@ New-to-do-item:placeholder {
 .Delete-to-do-item-button {
   margin-left: 20px;
   align-self: center;
-  border: 1.3px solid rgb(59, 55, 55);
+  border: 1.3px solid rgb(7, 75, 80);
   border-radius: 8px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 .Delete-to-do-item-button:hover {
-  background-color: black;
+  background-color: rgb(7, 75, 80);
   color: white;
 }
 
